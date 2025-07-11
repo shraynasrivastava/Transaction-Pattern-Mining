@@ -1,0 +1,224 @@
+2025-06-30 18:19:29,339 - __main__ - INFO - Downloading dataset from Kaggle...
+2025-06-30 18:20:10,315 - __main__ - INFO - Dataset downloaded successfully to /Users/aniketgupta/Desktop/Python Projects /project2/data/raw
+2025-06-30 18:21:46,941 - __main__ - INFO - Starting pipeline tests...
+2025-06-30 18:21:46,941 - src.data.data_processor - INFO - Loading data from /Users/aniketgupta/Desktop/Python Projects /project2/data/raw/creditcard.csv
+2025-06-30 18:21:49,698 - src.data.data_processor - INFO - Data loaded successfully. Shape: (284807, 31)
+2025-06-30 18:21:49,700 - __main__ - INFO - Data loading test passed
+2025-06-30 18:21:49,700 - src.data.data_processor - INFO - Starting data preprocessing...
+2025-06-30 18:21:50,053 - src.data.data_processor - INFO - Processed features saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/processed_features.csv
+2025-06-30 18:21:50,054 - __main__ - INFO - Data preprocessing test passed
+2025-06-30 18:21:50,054 - src.data.data_processor - INFO - Applying SMOTE for handling class imbalance...
+2025-06-30 18:21:50,067 - src.data.data_processor - ERROR - Error applying SMOTE: Found input variables with inconsistent numbers of samples: [1000, 284807]
+2025-06-30 18:21:50,067 - __main__ - ERROR - Test failed: Failed to apply SMOTE
+2025-06-30 18:22:26,621 - __main__ - INFO - Starting pipeline tests...
+2025-06-30 18:22:26,621 - src.data.data_processor - INFO - Loading data from /Users/aniketgupta/Desktop/Python Projects /project2/data/raw/creditcard.csv
+2025-06-30 18:22:29,085 - src.data.data_processor - INFO - Data loaded successfully. Shape: (284807, 31)
+2025-06-30 18:22:29,086 - __main__ - INFO - Data loading test passed
+2025-06-30 18:22:29,086 - src.data.data_processor - INFO - Starting data preprocessing...
+2025-06-30 18:22:29,385 - src.data.data_processor - INFO - Processed features saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/processed_features.csv
+2025-06-30 18:22:29,385 - __main__ - INFO - Data preprocessing test passed
+2025-06-30 18:22:29,385 - src.data.data_processor - INFO - Applying SMOTE for handling class imbalance...
+2025-06-30 18:22:29,392 - src.data.data_processor - ERROR - Error applying SMOTE: Expected n_neighbors <= n_samples,  but n_samples = 2, n_neighbors = 6
+2025-06-30 18:22:29,392 - __main__ - ERROR - Test failed: Failed to apply SMOTE
+2025-06-30 18:23:02,740 - __main__ - INFO - Starting pipeline tests...
+2025-06-30 18:23:02,741 - src.data.data_processor - INFO - Loading data from /Users/aniketgupta/Desktop/Python Projects /project2/data/raw/creditcard.csv
+2025-06-30 18:23:06,315 - src.data.data_processor - INFO - Data loaded successfully. Shape: (284807, 31)
+2025-06-30 18:23:06,316 - __main__ - INFO - Data loading test passed
+2025-06-30 18:23:06,317 - src.data.data_processor - INFO - Starting data preprocessing...
+2025-06-30 18:23:06,963 - src.data.data_processor - INFO - Processed features saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/processed_features.csv
+2025-06-30 18:23:06,963 - __main__ - INFO - Data preprocessing test passed
+2025-06-30 18:23:07,053 - __main__ - ERROR - Unexpected error: positional indexers are out-of-bounds
+2025-06-30 18:23:38,079 - __main__ - INFO - Starting pipeline tests...
+2025-06-30 18:23:38,079 - src.data.data_processor - INFO - Loading data from /Users/aniketgupta/Desktop/Python Projects /project2/data/raw/creditcard.csv
+2025-06-30 18:23:41,003 - src.data.data_processor - INFO - Data loaded successfully. Shape: (284807, 31)
+2025-06-30 18:23:41,004 - __main__ - INFO - Data loading test passed
+2025-06-30 18:23:41,095 - __main__ - INFO - Data distribution - Fraud: 492, Normal: 284315
+2025-06-30 18:23:41,095 - src.data.data_processor - INFO - Starting data preprocessing...
+2025-06-30 18:23:41,477 - src.data.data_processor - INFO - Processed features saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/processed_features.csv
+2025-06-30 18:23:41,477 - __main__ - INFO - Data preprocessing test passed
+2025-06-30 18:23:41,575 - __main__ - ERROR - Unexpected error: '[4920, 6108, 6329, 6331, 6334, 6336, 6338, 6427, 6446, 6472, 6529, 6609, 6641, 6717, 6719, 6734, 6774, 6820, 6870, 6882, 6899, 6903, 6971, 8296, 8312, 8335, 8615, 8617, 8842, 8845, 8972, 9035, 9179, 9252, 9487, 9509, 10204, 10484, 10497, 10498, 10568, 10630, 10690, 10801, 10891, 10897, 11343, 11710, 11841, 11880, 12070, 12108, 12261, 12369, 14104, 14170, 14197, 14211, 14338, 15166, 15204, 15225, 15451, 15476, 15506, 15539, 15566, 15736, 15751, 15781, 15810, 16415, 16780, 16863, 17317, 17366, 17407, 17453, 17480, 18466, 18472, 18773, 18809, 20198, 23308, 23422, 26802, 27362, 27627, 27738, 27749, 29687, 30100, 30314, 30384, 30398, 30442, 30473, 30496, 31002, 33276, 39183, 40085, 40525, 41395, 41569, 41943, 42007, 42009, 42473, 42528, 42549, 42590, 42609, 42635, 42674, 42696, 42700, 42741, 42756, 42769, 42784, 42856, 42887, 42936, 42945, 42958, 43061, 43160, 43204, 43428, 43624, 43681, 43773, 44001, 44091, 44223, 44270, 44556, 45203, 45732, 46909, 46918, 46998, 47802, 48094, 50211, 50537, 52466, 52521, 52584, 53591, 53794, 55401, 56703, 57248, 57470, 57615, 58422, 58761, 59539, 61787, 63421, 63634, 64329, 64411, 64460, 68067, 68320, 68522, 68633, 69498, 69980, 70141, 70589, 72757, 73784, 73857, 74496, 74507, 74794, 75511, 76555, 76609, 76929, 77099, 77348, 77387, 77682, 79525, 79536, 79835, 79874, 79883, 80760, 81186, 81609, 82400, 83053, 83297, 83417, 84543, 86155, 87354, 88258, 88307, 88876, 88897, 89190, 91671, 92777, 93424, 93486, 93788, 94218, 95534, 95597, 96341, 96789, 96994, 99506, 100623, 101509, 102441, 102442, 102443, 102444, 102445, 102446, 102782, 105178, 106679, 106998, 107067, 107637, 108258, 108708, 111690, 112840, 114271, 116139, 116404, 118308, 119714, 119781, 120505, 120837, 122479, 123141, 123201, 123238, 123270, 123301, 124036, 124087, 124115, 124176, 125342, 128479, 131272, 135718, 137705, 140786, 141257, 141258, 141259, 141260, 142405, 142557, 143188, 143333, 143334, 143335, 143336, 143728, 143731, 144104, 144108, 144754, 145800, 146790, 147548, 147605, 149145, 149357, 149522, 149577, 149587, 149600, 149869, 149874, 150601, 150644, 150647, 150654, 150660, 150661, 150662, 150663, 150665, 150666, 150667, 150668, 150669, 150677, 150678, 150679, 150680, 150684, 150687, 150692, 150697, 150715, 150925, 151006, 151007, 151008, 151009, 151011, 151103, 151196, 151462, 151519, 151730, 151807, 152019, 152223, 152295, 153823, 153835, 153885, 154234, 154286, 154371, 154454, 154587, 154633, 154668, 154670, 154676, 154684, 154693, 154694, 154697, 154718, 154719, 154720, 154960, 156988, 156990, 157585, 157868, 157871, 157918, 163149, 163586, 167184, 167305, 172787, 176049, 177195, 178208, 181966, 182992, 183106, 184379, 189587, 189701, 189878, 190368, 191074, 191267, 191359, 191544, 191690, 192382, 192529, 192584, 192687, 195383, 197586, 198868, 199896, 201098, 201601, 203324, 203328, 203700, 204064, 204079, 204503, 208651, 212516, 212644, 213092, 213116, 214662, 214775, 215132, 215953, 215984, 218442, 219025, 219892, 220725, 221018, 221041, 222133, 222419, 223366, 223572, 223578, 223618, 226814, 226877, 229712, 229730, 230076, 230476, 231978, 233258, 234574, 234632, 234633, 234705, 235616, 235634, 235644, 237107, 237426, 238222, 238366, 238466, 239499, 239501, 240222, 241254, 241445, 243393, 243547, 243699, 243749, 243848, 244004, 244333, 245347, 245556, 247673, 247995, 248296, 248971, 249167, 249239, 249607, 249828, 249963, 250761, 251477, 251866, 251881, 251891, 251904, 252124, 252774, 254344, 254395, 255403, 255556, 258403, 261056, 261473, 261925, 262560, 262826, 263080, 263274, 263324, 263877, 268375, 272521, 274382, 274475, 275992, 276071, 276864, 279863, 280143, 280149, 281144, 281674, 138028, 63099, 73411, 164247, 148999, 38488, 153861, 20458, 158719, 10980, 45407, 248639, 136754, 76700, 190195, 249322, 49363, 66794, 45817, 221437, 127274, 30788, 238800, 97840, 228543, 251261, 237223, 186112, 102431, 251828, 168035, 122614, 88075, 192206, 143105, 22621, 249004, 178607, 86164, 175286, 193698, 98934, 161223, 179855, 69654, 193077, 268602, 107985, 266106, 33631, 70929, 175881, 27329, 187550, 71700, 11840, 198183, 237277, 253223, 156189, 3059, 136630, 250454, 32795, 125913, 21508, 206033, 45728, 152948, 120301, 251015, 16307, 175443, 256275, 233528, 93441, 209824, 63916, 66724, 176716, 251020, 163620, 202699, 85802, 47535, 39680, 37668, 225632, 237521, 219949, 156174, 241588, 146913, 158353, 41777, 59526, 90640, 104837, 116161, 261018, 188093, 154261, 135603, 124884, 280447, 269261, 35123, 283834, 195552, 50565, 280126, 16467, 169682, 166627, 153995, 24542, 130379, 6595, 279161, 29577, 184033, 255545, 276121, 225718, 35947, 77489, 110005, 149725, 250084, 161326, 189056, 130890, 231115, 35325, 109763, 157043, 151732, 213599, 61747, 237718, 252999, 135872, 224184, 45206, 75689, 137594, 233978, 5555, 2854, 39763, 274057, 107720, 176305, 197036, 257332, 224664, 157183, 249818, 27735, 174960, 94316, 197778, 106257, 233040, 238167, 197050, 54360, 234262, 268818, 153890, 215616, 14679, 64688, 144400, 157530, 122285, 57838, 31991, 103784, 223301, 223840, 34975, 219812, 15104, 263729, 94104, 169597, 165110, 44217, 212178, 159855, 7379, 277419, 28270, 129728, 158149, 259328, 257845, 103078, 77777, 76398, 156954, 222932, 29005, 14730, 253643, 121796, 154096, 175394, 200118, 32194, 239691, 31840, 201758, 125515, 142474, 76302, 35896, 204335, 17748, 124525, 269467, 282362, 1833, 232331, 93031, 46010, 239483, 88015, 48498, 67497, 160258, 277752, 205915, 205787, 47344, 68217, 206084, 76163, 220166, 173700, 219344, 60735, 1107, 35256, 139133, 75216, 177057, 252226, 134447, 243617, 28858, 50204, 23050, 103430, 105219, 26371, 92645, 259117, 100236, 90855, 133983, 211990, 116662, 255561, 196751, 7454, 269480, 155964, 84735, 165807, 155967, 164874, 91492, 20746, 145814, 77253, 89516, 164072, 198552, 204805, 241321, 14327, 235998, 232091, 17472, 194093, 157580, 187662, 171795, 235330, 89723, 2865, 246628, 129867, 32474, 150277, 273222, 193189, 267225, 61136, 25784, 224363, 68443, 283471, 190038, 163265, 108727, 163262, 225018, 23141, 110643, 97973, 42852, 82989, 134636, 226990, 151504, 156127, 28747, 77211, 248467, 249445, 84205, 10898, 98503, 270805, 148288, 227694, 238904, 169918, 65136, 171291, 227387, 212425, 4150, 274447, 177685, 193689, 123402, 145157, 170283, 123288, 206796, 248493, 40181, 60685, 221064, 131560, 165533, 96074, 112975, 139946, 188152, 126793, 92581, 256263, 97185, 33038, 252122, 128028, 185448, 48559, 126494, 157560, 85913, 44077, 271842, 250611, 150863, 209378, 99789, 24359, 65112, 193300, 61663, 237800, 231864, 196514, 104314, 208565, 71128, 273390, 174921, 269485, 266523, 50067, 183566, 227226, 63806, 147327, 129521, 174205, 124492, 255313, 56324, 203312, 61278, 132850, 208258, 19376, 9366, 257095, 124890, 23159, 275460, 96339, 58681, 172821, 39196, 246541, 73556, 118986, 226547, 120363, 153448, 94098, 81450, 9957, 128950, 124444, 259501, 80160, 16056, 225922, 197663, 53715, 45694, 37682, 5031, 204527, 138383, 243191, 267698, 175852, 128360, 243446, 47766, 241578, 73370, 66212, 7129, 216107, 267375, 220201, 78087, 110932, 199115, 238723, 111471, 1686, 68105, 187445, 99356, 78955, 188962, 194731, 245046, 41737, 243378, 30062, 99157, 246166, 200043, 34541, 213765, 276119, 102735, 82987, 148343, 271677, 191914, 10712, 117602, 262308, 79001, 272928, 169296, 87247, 246342, 16119, 28850, 233162, 210383, 60765, 153469, 121938, 84533, 55840, 70411, 95640] not in index'
+2025-06-30 18:24:28,675 - __main__ - INFO - Starting pipeline tests...
+2025-06-30 18:24:28,675 - src.data.data_processor - INFO - Loading data from /Users/aniketgupta/Desktop/Python Projects /project2/data/raw/creditcard.csv
+2025-06-30 18:24:31,390 - src.data.data_processor - INFO - Data loaded successfully. Shape: (284807, 31)
+2025-06-30 18:24:31,391 - __main__ - INFO - Data loading test passed
+2025-06-30 18:24:31,482 - __main__ - INFO - Data distribution - Fraud: 492, Normal: 284315
+2025-06-30 18:24:31,483 - src.data.data_processor - INFO - Starting data preprocessing...
+2025-06-30 18:24:31,865 - src.data.data_processor - INFO - Processed features saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/processed_features.csv
+2025-06-30 18:24:31,865 - __main__ - INFO - Data preprocessing test passed
+2025-06-30 18:24:31,949 - src.data.data_processor - INFO - Applying SMOTE for handling class imbalance...
+2025-06-30 18:24:31,954 - src.data.data_processor - INFO - SMOTE applied successfully
+2025-06-30 18:24:31,954 - __main__ - INFO - SMOTE application test passed
+2025-06-30 18:24:31,955 - src.models.fraud_detector - INFO - Detecting anomalies using Isolation Forest...
+2025-06-30 18:24:32,178 - src.models.fraud_detector - INFO - Anomaly detection completed successfully
+2025-06-30 18:24:32,178 - __main__ - INFO - Anomaly detection test passed
+2025-06-30 18:24:32,178 - src.models.fraud_detector - INFO - Finding optimal number of clusters...
+2025-06-30 18:24:35,324 - src.models.fraud_detector - INFO - Optimal number of clusters: 4
+2025-06-30 18:24:35,324 - src.models.fraud_detector - INFO - Clustering users with 4 clusters...
+2025-06-30 18:24:35,576 - src.models.fraud_detector - INFO - Clustering completed successfully
+2025-06-30 18:24:35,577 - __main__ - INFO - Clustering test passed
+2025-06-30 18:24:35,579 - src.models.fraud_detector - ERROR - Error in risk label assignment: X has 4 features, but IsolationForest is expecting 9 features as input.
+2025-06-30 18:24:35,580 - __main__ - ERROR - Test failed: Failed to assign risk labels
+2025-06-30 18:25:38,382 - __main__ - INFO - Starting pipeline tests...
+2025-06-30 18:25:38,383 - src.data.data_processor - INFO - Loading data from /Users/aniketgupta/Desktop/Python Projects /project2/data/raw/creditcard.csv
+2025-06-30 18:25:41,510 - src.data.data_processor - INFO - Data loaded successfully. Shape: (284807, 31)
+2025-06-30 18:25:41,517 - __main__ - INFO - Data loading test passed
+2025-06-30 18:25:41,696 - __main__ - INFO - Data distribution - Fraud: 492, Normal: 284315
+2025-06-30 18:25:41,696 - src.data.data_processor - INFO - Starting data preprocessing...
+2025-06-30 18:25:42,033 - src.data.data_processor - INFO - Processed features saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/processed_features.csv
+2025-06-30 18:25:42,033 - __main__ - INFO - Data preprocessing test passed
+2025-06-30 18:25:42,108 - src.data.data_processor - INFO - Applying SMOTE for handling class imbalance...
+2025-06-30 18:25:42,116 - src.data.data_processor - INFO - SMOTE applied successfully
+2025-06-30 18:25:42,116 - __main__ - INFO - SMOTE application test passed
+2025-06-30 18:25:42,117 - src.models.fraud_detector - INFO - Detecting anomalies using Isolation Forest...
+2025-06-30 18:25:42,343 - src.models.fraud_detector - INFO - Anomaly detection completed successfully
+2025-06-30 18:25:42,343 - __main__ - INFO - Anomaly detection test passed
+2025-06-30 18:25:42,343 - src.models.fraud_detector - INFO - Finding optimal number of clusters...
+2025-06-30 18:25:46,874 - src.models.fraud_detector - INFO - Optimal number of clusters: 4
+2025-06-30 18:25:46,874 - src.models.fraud_detector - INFO - Clustering users with 4 clusters...
+2025-06-30 18:25:47,087 - src.models.fraud_detector - INFO - Clustering completed successfully
+2025-06-30 18:25:47,088 - __main__ - INFO - Clustering test passed
+2025-06-30 18:25:47,106 - src.models.fraud_detector - ERROR - Error in risk label assignment: Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match).
+2025-06-30 18:25:47,107 - __main__ - ERROR - Test failed: Failed to assign risk labels
+2025-06-30 18:26:44,029 - __main__ - INFO - Starting pipeline tests...
+2025-06-30 18:26:44,029 - src.data.data_processor - INFO - Loading data from /Users/aniketgupta/Desktop/Python Projects /project2/data/raw/creditcard.csv
+2025-06-30 18:26:45,484 - src.data.data_processor - INFO - Data loaded successfully. Shape: (284807, 31)
+2025-06-30 18:26:45,484 - __main__ - INFO - Data loading test passed
+2025-06-30 18:26:45,517 - __main__ - INFO - Data distribution - Fraud: 492, Normal: 284315
+2025-06-30 18:26:45,517 - src.data.data_processor - INFO - Starting data preprocessing...
+2025-06-30 18:26:45,717 - src.data.data_processor - INFO - Processed features saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/processed_features.csv
+2025-06-30 18:26:45,718 - __main__ - INFO - Data preprocessing test passed
+2025-06-30 18:26:45,747 - src.data.data_processor - INFO - Applying SMOTE for handling class imbalance...
+2025-06-30 18:26:45,749 - src.data.data_processor - INFO - SMOTE applied successfully
+2025-06-30 18:26:45,749 - __main__ - INFO - SMOTE application test passed
+2025-06-30 18:26:45,750 - src.models.fraud_detector - INFO - Detecting anomalies using Isolation Forest...
+2025-06-30 18:26:45,850 - src.models.fraud_detector - INFO - Anomaly detection completed successfully
+2025-06-30 18:26:45,850 - __main__ - INFO - Anomaly detection test passed
+2025-06-30 18:26:45,851 - src.models.fraud_detector - INFO - Finding optimal number of clusters...
+2025-06-30 18:26:47,530 - src.models.fraud_detector - INFO - Optimal number of clusters: 4
+2025-06-30 18:26:47,530 - src.models.fraud_detector - INFO - Clustering users with 4 clusters...
+2025-06-30 18:26:47,766 - src.models.fraud_detector - INFO - Clustering completed successfully
+2025-06-30 18:26:47,766 - __main__ - INFO - Clustering test passed
+2025-06-30 18:26:47,771 - __main__ - INFO - Risk label assignment test passed
+2025-06-30 18:26:47,812 - src.models.fraud_detector - INFO - Models saved successfully to /Users/aniketgupta/Desktop/Python Projects /project2/models
+2025-06-30 18:26:47,812 - __main__ - INFO - Model saving test passed
+2025-06-30 18:26:49,251 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/fraud_distribution_20250630_182648.png
+2025-06-30 18:26:49,900 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/amount_distribution_20250630_182649.png
+2025-06-30 18:26:50,422 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/time_patterns_20250630_182650.png
+2025-06-30 18:26:50,427 - __main__ - INFO - Basic visualizations test passed
+2025-06-30 18:26:50,842 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/feature_correlations_20250630_182650.png
+2025-06-30 18:26:50,843 - __main__ - INFO - Feature importance plot test passed
+2025-06-30 18:26:51,204 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/cluster_visualization_20250630_182650.png
+2025-06-30 18:26:51,204 - __main__ - INFO - Cluster visualization test passed
+2025-06-30 18:26:51,418 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/risk_distribution_20250630_182651.png
+2025-06-30 18:26:51,418 - __main__ - INFO - Risk distribution plot test passed
+2025-06-30 18:26:51,479 - __main__ - ERROR - Unexpected error: Cannot specify ',' with 's'.
+2025-06-30 18:27:48,376 - __main__ - INFO - Starting pipeline tests...
+2025-06-30 18:27:48,377 - src.data.data_processor - INFO - Loading data from /Users/aniketgupta/Desktop/Python Projects /project2/data/raw/creditcard.csv
+2025-06-30 18:27:50,059 - src.data.data_processor - INFO - Data loaded successfully. Shape: (284807, 31)
+2025-06-30 18:27:50,059 - __main__ - INFO - Data loading test passed
+2025-06-30 18:27:50,097 - __main__ - INFO - Data distribution - Fraud: 492, Normal: 284315
+2025-06-30 18:27:50,097 - src.data.data_processor - INFO - Starting data preprocessing...
+2025-06-30 18:27:50,350 - src.data.data_processor - INFO - Processed features saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/processed_features.csv
+2025-06-30 18:27:50,350 - __main__ - INFO - Data preprocessing test passed
+2025-06-30 18:27:50,399 - src.data.data_processor - INFO - Applying SMOTE for handling class imbalance...
+2025-06-30 18:27:50,401 - src.data.data_processor - INFO - SMOTE applied successfully
+2025-06-30 18:27:50,402 - __main__ - INFO - SMOTE application test passed
+2025-06-30 18:27:50,402 - src.models.fraud_detector - INFO - Detecting anomalies using Isolation Forest...
+2025-06-30 18:27:50,537 - src.models.fraud_detector - INFO - Anomaly detection completed successfully
+2025-06-30 18:27:50,537 - __main__ - INFO - Anomaly detection test passed
+2025-06-30 18:27:50,537 - src.models.fraud_detector - INFO - Finding optimal number of clusters...
+2025-06-30 18:27:54,098 - src.models.fraud_detector - INFO - Optimal number of clusters: 4
+2025-06-30 18:27:54,099 - src.models.fraud_detector - INFO - Clustering users with 4 clusters...
+2025-06-30 18:27:54,343 - src.models.fraud_detector - INFO - Clustering completed successfully
+2025-06-30 18:27:54,344 - __main__ - INFO - Clustering test passed
+2025-06-30 18:27:54,353 - __main__ - INFO - Risk label assignment test passed
+2025-06-30 18:27:54,407 - src.models.fraud_detector - INFO - Models saved successfully to /Users/aniketgupta/Desktop/Python Projects /project2/models
+2025-06-30 18:27:54,407 - __main__ - INFO - Model saving test passed
+2025-06-30 18:27:56,448 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/fraud_distribution_20250630_182755.png
+2025-06-30 18:27:57,479 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/amount_distribution_20250630_182757.png
+2025-06-30 18:27:58,025 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/time_patterns_20250630_182757.png
+2025-06-30 18:27:58,031 - __main__ - INFO - Basic visualizations test passed
+2025-06-30 18:27:58,695 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/feature_correlations_20250630_182758.png
+2025-06-30 18:27:58,695 - __main__ - INFO - Feature importance plot test passed
+2025-06-30 18:27:59,411 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/cluster_visualization_20250630_182758.png
+2025-06-30 18:27:59,412 - __main__ - INFO - Cluster visualization test passed
+2025-06-30 18:27:59,698 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/risk_distribution_20250630_182759.png
+2025-06-30 18:27:59,699 - __main__ - INFO - Risk distribution plot test passed
+2025-06-30 18:27:59,781 - src.visualization.visualizer - INFO - Summary report saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/summary_report_20250630_182759.txt
+2025-06-30 18:27:59,781 - __main__ - INFO - Summary report generation test passed
+2025-06-30 18:27:59,782 - __main__ - INFO - All tests passed successfully!
+2025-06-30 18:28:11,109 - __main__ - INFO - Downloading dataset from Kaggle...
+2025-06-30 18:29:01,066 - __main__ - INFO - Dataset downloaded successfully to /Users/aniketgupta/Desktop/Python Projects /project2/data/raw
+2025-06-30 18:29:09,286 - __main__ - INFO - Starting pipeline tests...
+2025-06-30 18:29:09,295 - src.data.data_processor - INFO - Loading data from /Users/aniketgupta/Desktop/Python Projects /project2/data/raw/creditcard.csv
+2025-06-30 18:29:13,751 - src.data.data_processor - INFO - Data loaded successfully. Shape: (284807, 31)
+2025-06-30 18:29:13,752 - __main__ - INFO - Data loading test passed
+2025-06-30 18:29:13,833 - __main__ - INFO - Data distribution - Fraud: 492, Normal: 284315
+2025-06-30 18:29:13,835 - src.data.data_processor - INFO - Starting data preprocessing...
+2025-06-30 18:29:14,189 - src.data.data_processor - INFO - Processed features saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/processed_features.csv
+2025-06-30 18:29:14,189 - __main__ - INFO - Data preprocessing test passed
+2025-06-30 18:29:14,287 - src.data.data_processor - INFO - Applying SMOTE for handling class imbalance...
+2025-06-30 18:29:14,292 - src.data.data_processor - INFO - SMOTE applied successfully
+2025-06-30 18:29:14,292 - __main__ - INFO - SMOTE application test passed
+2025-06-30 18:29:14,294 - src.models.fraud_detector - INFO - Detecting anomalies using Isolation Forest...
+2025-06-30 18:29:14,513 - src.models.fraud_detector - INFO - Anomaly detection completed successfully
+2025-06-30 18:29:14,514 - __main__ - INFO - Anomaly detection test passed
+2025-06-30 18:29:14,514 - src.models.fraud_detector - INFO - Finding optimal number of clusters...
+2025-06-30 18:29:18,129 - src.models.fraud_detector - INFO - Optimal number of clusters: 4
+2025-06-30 18:29:18,130 - src.models.fraud_detector - INFO - Clustering users with 4 clusters...
+2025-06-30 18:29:18,319 - src.models.fraud_detector - INFO - Clustering completed successfully
+2025-06-30 18:29:18,319 - __main__ - INFO - Clustering test passed
+2025-06-30 18:29:18,329 - __main__ - INFO - Risk label assignment test passed
+2025-06-30 18:29:18,403 - src.models.fraud_detector - INFO - Models saved successfully to /Users/aniketgupta/Desktop/Python Projects /project2/models
+2025-06-30 18:29:18,403 - __main__ - INFO - Model saving test passed
+2025-06-30 18:29:19,386 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/fraud_distribution_20250630_182918.png
+2025-06-30 18:29:20,180 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/amount_distribution_20250630_182919.png
+2025-06-30 18:29:20,836 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/time_patterns_20250630_182920.png
+2025-06-30 18:29:20,838 - __main__ - INFO - Basic visualizations test passed
+2025-06-30 18:29:21,474 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/feature_correlations_20250630_182920.png
+2025-06-30 18:29:21,474 - __main__ - INFO - Feature importance plot test passed
+2025-06-30 18:29:22,075 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/cluster_visualization_20250630_182921.png
+2025-06-30 18:29:22,076 - __main__ - INFO - Cluster visualization test passed
+2025-06-30 18:29:22,329 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/risk_distribution_20250630_182922.png
+2025-06-30 18:29:22,329 - __main__ - INFO - Risk distribution plot test passed
+2025-06-30 18:29:22,401 - src.visualization.visualizer - INFO - Summary report saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/summary_report_20250630_182922.txt
+2025-06-30 18:29:22,401 - __main__ - INFO - Summary report generation test passed
+2025-06-30 18:29:22,401 - __main__ - INFO - All tests passed successfully!
+2025-06-30 18:38:07,949 - __main__ - INFO - Downloading dataset from Kaggle...
+2025-06-30 18:38:57,372 - __main__ - INFO - Dataset downloaded successfully to /Users/aniketgupta/Desktop/Python Projects /project2/data/raw
+2025-06-30 18:39:11,412 - __main__ - INFO - Starting pipeline tests...
+2025-06-30 18:39:11,412 - src.data.data_processor - INFO - Loading data from /Users/aniketgupta/Desktop/Python Projects /project2/data/raw/creditcard.csv
+2025-06-30 18:39:14,109 - src.data.data_processor - INFO - Data loaded successfully. Shape: (284807, 31)
+2025-06-30 18:39:14,109 - __main__ - INFO - Data loading test passed
+2025-06-30 18:39:14,160 - __main__ - INFO - Data distribution - Fraud: 492, Normal: 284315
+2025-06-30 18:39:14,160 - src.data.data_processor - INFO - Starting data preprocessing...
+2025-06-30 18:39:14,390 - src.data.data_processor - INFO - Processed features saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/processed_features.csv
+2025-06-30 18:39:14,390 - __main__ - INFO - Data preprocessing test passed
+2025-06-30 18:39:14,425 - src.data.data_processor - INFO - Applying SMOTE for handling class imbalance...
+2025-06-30 18:39:14,428 - src.data.data_processor - INFO - SMOTE applied successfully
+2025-06-30 18:39:14,428 - __main__ - INFO - SMOTE application test passed
+2025-06-30 18:39:14,429 - src.models.fraud_detector - INFO - Detecting anomalies using Isolation Forest...
+2025-06-30 18:39:14,608 - src.models.fraud_detector - INFO - Anomaly detection completed successfully
+2025-06-30 18:39:14,608 - __main__ - INFO - Anomaly detection test passed
+2025-06-30 18:39:14,608 - src.models.fraud_detector - INFO - Finding optimal number of clusters...
+2025-06-30 18:39:17,547 - src.models.fraud_detector - INFO - Optimal number of clusters: 4
+2025-06-30 18:39:17,549 - src.models.fraud_detector - INFO - Clustering users with 4 clusters...
+2025-06-30 18:39:17,802 - src.models.fraud_detector - INFO - Clustering completed successfully
+2025-06-30 18:39:17,802 - __main__ - INFO - Clustering test passed
+2025-06-30 18:39:17,814 - __main__ - INFO - Risk label assignment test passed
+2025-06-30 18:39:17,879 - src.models.fraud_detector - INFO - Models saved successfully to /Users/aniketgupta/Desktop/Python Projects /project2/models
+2025-06-30 18:39:17,879 - __main__ - INFO - Model saving test passed
+2025-06-30 18:39:19,254 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/fraud_distribution_20250630_183918.png
+2025-06-30 18:39:20,419 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/amount_distribution_20250630_183919.png
+2025-06-30 18:39:21,285 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/time_patterns_20250630_183920.png
+2025-06-30 18:39:21,288 - __main__ - INFO - Basic visualizations test passed
+2025-06-30 18:39:22,049 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/feature_correlations_20250630_183921.png
+2025-06-30 18:39:22,049 - __main__ - INFO - Feature importance plot test passed
+2025-06-30 18:39:22,700 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/cluster_visualization_20250630_183922.png
+2025-06-30 18:39:22,700 - __main__ - INFO - Cluster visualization test passed
+2025-06-30 18:39:23,077 - src.visualization.visualizer - INFO - Plot saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/risk_distribution_20250630_183922.png
+2025-06-30 18:39:23,077 - __main__ - INFO - Risk distribution plot test passed
+2025-06-30 18:39:23,217 - src.visualization.visualizer - INFO - Summary report saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/summary_report_20250630_183923.txt
+2025-06-30 18:39:23,217 - src.visualization.visualizer - INFO - Analysis summary saved to /Users/aniketgupta/Desktop/Python Projects /project2/data/processed/visualizations/analysis_summary_20250630_183923.json
+2025-06-30 18:39:23,217 - __main__ - INFO - Summary report generation test passed
+2025-06-30 18:39:23,217 - __main__ - INFO - All tests passed successfully!

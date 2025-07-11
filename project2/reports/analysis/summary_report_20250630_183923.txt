@@ -1,0 +1,61 @@
+Fraud Detection Analysis Summary Report
+=====================================
+
+1. Data Overview
+--------------
+  total_transactions: 284807
+  fraud_transactions: 492
+  normal_transactions: 284315
+  fraud_ratio: 0.0017
+  amount_stats:
+    count: 284807.0000
+    mean: 88.3496
+    std: 250.1201
+    min: 0.0000
+    25%: 5.6000
+    50%: 22.0000
+    75%: 77.1650
+    max: 25691.1600
+  time_range:
+    start: 0.0000
+    end: 172792.0000
+
+2. Model Information
+------------------
+  isolation_forest_params:
+    bootstrap: False
+    contamination: 0.0200
+    max_features: 1.0000
+    max_samples: auto
+    n_estimators: 100
+    n_jobs: None
+    random_state: 42
+    verbose: 0
+    warm_start: False
+  kmeans_params:
+    algorithm: lloyd
+    copy_x: True
+    init: k-means++
+    max_iter: 300
+    n_clusters: 4
+    n_init: warn
+    random_state: 42
+    tol: 0.0001
+    verbose: 0
+  n_clusters: 4
+  anomaly_distribution:
+    normal: 980
+    anomaly: 20
+  cluster_sizes:
+    1: 431
+    0: 325
+    2: 243
+    3: 1
+  risk_distribution:
+    high_risk: 686
+    medium_risk: 314
+
+3. Risk Distribution
+------------------
+  high_risk: 686 (68.60%)
+  medium_risk: 314 (31.40%)
